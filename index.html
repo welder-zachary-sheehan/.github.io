@@ -1,41 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zachary Sheehan | Welding Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    .header {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .header p {
+      margin: 10px 0 0;
+      font-size: 1.2em;
+    }
+    .portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+    .portfolio img {
+      max-width: 100%;
+      width: 400px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .footer {
+      text-align: center;
+      padding: 30px;
+      background: #222;
+      color: #ccc;
+      font-size: 14px;
+    }
+    .contact {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .contact p {
+      font-size: 1.1em;
+      margin: 5px;
+    }
+  </style>
 </head>
 <body>
-
-  <header class="header">
+  <div class="header">
     <h1>Zachary Sheehan</h1>
     <p>Certified Welder | Modern Welding School Graduate</p>
-  </header>
+  </div>
 
-  <section class="intro">
-    <p>Welcome to my welding portfolio. I'm a detail-oriented welder with hands-on experience across a wide range of materials and techniques. Here you’ll find examples of my craftsmanship and dedication to precision and durability in every weld.</p>
-  </section>
-
-  <section class="contact">
+  <div class="contact">
     <p>📞 (518) 682-0269</p>
-    <p>✉️ <a href="mailto:zacharysheehanr@gmail.com">zacharysheehanr@gmail.com</a></p>
+    <p>✉️ zacharysheehanr@gmail.com</p>
     <p>📍 Cambridge, NY</p>
-  </section>
+  </div>
 
-  <section class="portfolio">
-    <img src="https://i.imgur.com/cs78FDk.jpg" alt="Welding Project 1">
-    <img src="https://i.imgur.com/MqZFyWn.jpg" alt="Welding Project 2">
-    <img src="https://i.imgur.com/Cuyg1XN.jpg" alt="Welding Project 3">
-    <img src="https://i.imgur.com/n6aGTAr.jpg" alt="Welding Project 4">
-    <img src="https://i.imgur.com/yBuqBed.jpg" alt="Welding Project 5">
-    <img src="https://i.imgur.com/1mK7fgV.jpg" alt="Welding Project 6">
-    <img src="https://i.imgur.com/x0vDaDk.jpg" alt="Welding Project 7">
-  </section>
+  <div class="portfolio">
+    <img src="https://i.imgur.com/cs78FDk.jpg" alt="Welding Image 1">
+    <img src="https://i.imgur.com/MqZFyWn.jpg" alt="Welding Image 2">
+    <img src="https://i.imgur.com/Cuyg1XN.jpg" alt="Welding Image 3">
+    <img src="https://i.imgur.com/n6aGTAr.jpg" alt="Welding Image 4">
+    <img src="https://i.imgur.com/yBuqBed.jpg" alt="Welding Image 5">
+    <img src="https://i.imgur.com/1mK7fgV.jpg" alt="Welding Image 6">
+    <img src="https://i.imgur.com/x0vDaDk.jpg" alt="Welding Image 7">
+  </div>
 
-  <footer class="footer">
-    &copy; 2024 Zachary Sheehan | All rights reserved.
-  </footer>
-
+  <div class="footer">
+    &copy; 2024 Zachary Sheehan | Welding Portfolio
+  </div>
 </body>
 </html>
