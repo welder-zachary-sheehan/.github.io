@@ -1,85 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Zachary Sheehan | Welding Portfolio</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f9f9f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
       color: #333;
+      line-height: 1.6;
     }
+
     .header {
-      background: #222;
+      background-color: #1f1f1f;
       color: #fff;
+      padding: 60px 20px 40px;
       text-align: center;
-      padding: 40px 20px;
     }
+
     .header h1 {
+      font-size: 3em;
       margin: 0;
-      font-size: 2.5em;
     }
+
     .header p {
-      margin: 10px 0 0;
       font-size: 1.2em;
-    }
-    .portfolio {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 20px;
-      gap: 20px;
-    }
-    .portfolio img {
-      max-width: 100%;
-      width: 400px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .footer {
-      text-align: center;
-      padding: 30px;
-      background: #222;
       color: #ccc;
-      font-size: 14px;
+      margin-top: 10px;
     }
+
+    .intro {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .intro p {
+      font-size: 1.1em;
+    }
+
     .contact {
       text-align: center;
-      margin: 20px 0;
+      margin: 30px 0;
     }
+
     .contact p {
-      font-size: 1.1em;
-      margin: 5px;
+      margin: 6px 0;
+      font-size: 1.05em;
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .portfolio img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .portfolio img:hover {
+      transform: scale(1.02);
+    }
+
+    .footer {
+      background-color: #1f1f1f;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-  <div class="header">
+
+  <header class="header">
     <h1>Zachary Sheehan</h1>
     <p>Certified Welder | Modern Welding School Graduate</p>
-  </div>
+  </header>
 
-  <div class="contact">
+  <section class="intro">
+    <p>Welcome to my welding portfolio. I'm a detail-oriented welder with hands-on experience across a wide range of materials and techniques. Here you’ll find examples of my craftsmanship and dedication to precision and durability in every weld.</p>
+  </section>
+
+  <section class="contact">
     <p>📞 (518) 682-0269</p>
-    <p>✉️ zacharysheehanr@gmail.com</p>
+    <p>✉️ <a href="mailto:zacharysheehanr@gmail.com">zacharysheehanr@gmail.com</a></p>
     <p>📍 Cambridge, NY</p>
-  </div>
+  </section>
 
-  <div class="portfolio">
-    <img src="https://i.imgur.com/cs78FDk.jpg" alt="Welding Image 1">
-    <img src="https://i.imgur.com/MqZFyWn.jpg" alt="Welding Image 2">
-    <img src="https://i.imgur.com/Cuyg1XN.jpg" alt="Welding Image 3">
-    <img src="https://i.imgur.com/n6aGTAr.jpg" alt="Welding Image 4">
-    <img src="https://i.imgur.com/yBuqBed.jpg" alt="Welding Image 5">
-    <img src="https://i.imgur.com/1mK7fgV.jpg" alt="Welding Image 6">
-    <img src="https://i.imgur.com/x0vDaDk.jpg" alt="Welding Image 7">
-  </div>
+  <section class="portfolio">
+    <img src="https://i.imgur.com/cs78FDk.jpg" alt="Welding Project 1">
+    <img src="https://i.imgur.com/MqZFyWn.jpg" alt="Welding Project 2">
+    <img src="https://i.imgur.com/Cuyg1XN.jpg" alt="Welding Project 3">
+    <img src="https://i.imgur.com/n6aGTAr.jpg" alt="Welding Project 4">
+    <img src="https://i.imgur.com/yBuqBed.jpg" alt="Welding Project 5">
+    <img src="https://i.imgur.com/1mK7fgV.jpg" alt="Welding Project 6">
+    <img src="https://i.imgur.com/x0vDaDk.jpg" alt="Welding Project 7">
+  </section>
 
-  <div class="footer">
-    &copy; 2024 Zachary Sheehan | Welding Portfolio
-  </div>
+  <footer class="footer">
+    &copy; 2024 Zachary Sheehan | All rights reserved.
+  </footer>
+
 </body>
 </html>
